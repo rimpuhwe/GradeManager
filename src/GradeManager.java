@@ -59,6 +59,22 @@ public class GradeManager {
         double min = Arrays.stream(marks).reduce(Double.MIN_VALUE, (a, b) -> Math.min(a, b));
         System.out.println("the lowest marks is : " + min);
     }
+    //searching using the index
+    public void searchMarkByIndex(int index) {
+        try {
+            // Checking for valid index
+            if (index < 0 ) {
+                throw new IndexOutOfBoundsException(" Valid range: 0 to " + (marks.length - 1));
+            }
+            System.out.println("The mark at index " + index + " is: " + marks[index]);
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("An unexpected error occurred while searching marks: " + e.getMessage());
+        }
+        finally {
+            System.out.println("Search operation completed.");
+        }
+    }
 
 }
 

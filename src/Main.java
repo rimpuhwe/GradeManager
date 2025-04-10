@@ -75,13 +75,16 @@ public class Main {
                     }
                     break;
                 }
-
-
-                case 7: // Exit
+                case 6:
+                    System.out.print("Enter the index of the mark you want to search: ");
+                    int index = scanner.nextInt();
+                    scores.searchMarkByIndex(index);
+                    break;
+                case 7:
                     System.out.println("THANK YOU FOR HAVING FUN WITH US");
                     return;
 
-                default: // Invalid Choice
+                default:
                     System.out.println("Wrong choice! Please select a valid option from the menu.");
             }
         }

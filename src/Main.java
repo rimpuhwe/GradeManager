@@ -12,7 +12,7 @@ public class Main {
         while (true) {
             System.out.println("******************");
             System.out.println("MENU");
-            System.out.println("""
+            System.out.print("""
                      1. Show your Marks
                      2. Total Sum
                      3. Calculating the average

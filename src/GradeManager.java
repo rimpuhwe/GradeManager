@@ -21,7 +21,7 @@ public class GradeManager {
     public void sumOfMarks() {
         // to use reduce method , we convert first array into stream
         this.sum = Arrays.stream(marks).reduce((double) 0, (a, b) -> a + b);
-        System.out.println("The total of marks: " + sum);
+        System.out.printf("The total of marks: %.2f " , sum);
     }
     // sorting out the marks
 
@@ -42,7 +42,7 @@ public class GradeManager {
         } else {
             this.average = sum / marks.length;
         }
-        System.out.println("The total average marks : " + average);
+        System.out.printf("The total average marks : %.2f \n" , average);
     }
 
     // finding the highest and the lowest marks in the array

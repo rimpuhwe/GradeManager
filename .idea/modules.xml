@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Grade manager.iml" filepath="$PROJECT_DIR$/Grade manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Grade Manager.iml" filepath="$PROJECT_DIR$/Grade Manager.iml" />
     </modules>
   </component>
 </project>
